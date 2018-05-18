@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Dashline
 //
-//  Created by Dr. Stephen, Ph.D on 5/18/18.
+//  Created by Micheal S. Bingham on 5/18/18.
 //  Copyright © 2018 Dashline Inc. All rights reserved.
 //
 
