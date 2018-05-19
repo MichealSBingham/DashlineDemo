@@ -49,6 +49,8 @@
 		2E15BC2F20AF3B6E00BEA0CB /* DashlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E15BC3320AF3B6E00BEA0CB /* DashlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashlineUITests.swift; sourceTree = "<group>"; };
 		2E15BC3520AF3B6E00BEA0CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75DCB7A020B0A4F0001D0B1A /* Myriad Pro Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Myriad Pro Regular.ttf"; sourceTree = "<group>"; };
+		75DCB7A120B0A862001D0B1A /* Arial Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arial Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,8 @@
 				2E15BC1C20AF3B6E00BEA0CB /* LaunchScreen.storyboard */,
 				2E15BC1F20AF3B6E00BEA0CB /* Info.plist */,
 				2E15BC1720AF3B6E00BEA0CB /* Dashline.xcdatamodeld */,
+				75DCB7A020B0A4F0001D0B1A /* Myriad Pro Regular.ttf */,
+				75DCB7A120B0A862001D0B1A /* Arial Black.ttf */,
 			);
 			path = Dashline;
 			sourceTree = "<group>";
