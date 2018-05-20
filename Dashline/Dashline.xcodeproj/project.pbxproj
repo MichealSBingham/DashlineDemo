@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06A117C05156E78DD21E7EDD /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		06A117C05156E78DD21E7EDD /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		12C7842530B8FE0E9A8B0DCC /* Pods_DashlineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C9A72868CF817B54590010 /* Pods_DashlineTests.framework */; };
 		2E15BC1120AF3B6E00BEA0CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15BC1020AF3B6E00BEA0CB /* AppDelegate.swift */; };
 		2E15BC1320AF3B6E00BEA0CB /* chooseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15BC1220AF3B6E00BEA0CB /* chooseStore.swift */; };
@@ -17,6 +17,8 @@
 		2E15BC1E20AF3B6E00BEA0CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E15BC1C20AF3B6E00BEA0CB /* LaunchScreen.storyboard */; };
 		2E15BC2920AF3B6E00BEA0CB /* DashlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15BC2820AF3B6E00BEA0CB /* DashlineTests.swift */; };
 		2E15BC3420AF3B6E00BEA0CB /* DashlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15BC3320AF3B6E00BEA0CB /* DashlineUITests.swift */; };
+		2E6E017C20B23A6B00D966A6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E017B20B23A6B00D966A6 /* Product.swift */; };
+		2E6E017E20B23A7900D966A6 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E017D20B23A7900D966A6 /* ShoppingCart.swift */; };
 		3BCC31E27105E2191B95B3B7 /* Pods_DashlineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8711F808846899A41A29C26 /* Pods_DashlineUITests.framework */; };
 		DD8E8F9B1100E0889E273326 /* Pods_Dashline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2982CF76D4F6729E5AE340B7 /* Pods_Dashline.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +59,8 @@
 		2E15BC2F20AF3B6E00BEA0CB /* DashlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DashlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E15BC3320AF3B6E00BEA0CB /* DashlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashlineUITests.swift; sourceTree = "<group>"; };
 		2E15BC3520AF3B6E00BEA0CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E6E017B20B23A6B00D966A6 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2E6E017D20B23A7900D966A6 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 		49C9A72868CF817B54590010 /* Pods_DashlineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashlineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED3AAF12E550A9542F5E5BE /* Pods-Dashline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashline.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dashline/Pods-Dashline.release.xcconfig"; sourceTree = "<group>"; };
 		70FF4B1F985EE22F0B79997C /* Pods-Dashline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dashline/Pods-Dashline.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A117C05156E78DD21E7EDD /* BuildFile in Frameworks */,
+				06A117C05156E78DD21E7EDD /* (null) in Frameworks */,
 				3BCC31E27105E2191B95B3B7 /* Pods_DashlineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +149,8 @@
 				2E15BC1720AF3B6E00BEA0CB /* Dashline.xcdatamodeld */,
 				75DCB7A020B0A4F0001D0B1A /* Myriad Pro Regular.ttf */,
 				75DCB7A120B0A862001D0B1A /* Arial Black.ttf */,
+				2E6E017B20B23A6B00D966A6 /* Product.swift */,
+				2E6E017D20B23A7900D966A6 /* ShoppingCart.swift */,
 			);
 			path = Dashline;
 			sourceTree = "<group>";
@@ -475,7 +481,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E6E017E20B23A7900D966A6 /* ShoppingCart.swift in Sources */,
 				2E15BC1920AF3B6E00BEA0CB /* Dashline.xcdatamodeld in Sources */,
+				2E6E017C20B23A6B00D966A6 /* Product.swift in Sources */,
 				2E15BC1320AF3B6E00BEA0CB /* chooseStore.swift in Sources */,
 				2E15BC1120AF3B6E00BEA0CB /* AppDelegate.swift in Sources */,
 			);
