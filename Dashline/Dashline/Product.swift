@@ -46,27 +46,7 @@ class Product: Object{
         }
     }
     
-    /// Returns the total tax of all items in the cart
-    class func getCartTaxTotal() -> Double{
-        var total = 0.0
-        let allProducts = uiRealm.objects(Product.self)
-        for product in allProducts{
-            total += product.total_tax
-        }
-        
-        return total
-    }
-    
-    /// Returns the total  of all items in the cart; including tax and discounts
-    class func getCartTotal() -> Double{
-        var total = 0.0
-        let allProducts = uiRealm.objects(Product.self)
-        for product in allProducts{
-            total += product.total
-        }
-        
-        return total
-    }
+  
     
     /// Adds a Product Object to the shopping cart. This function will update values of the 'Product'. Before modifying attributes of a Product object, call .beginWrite() and then call .commitWrite() afterwards. Example : try! uiRealm.beginWrite(); product!.quantity = quantity+1;  try! uiRealm.commitWrite()
     func addToCart()  {
