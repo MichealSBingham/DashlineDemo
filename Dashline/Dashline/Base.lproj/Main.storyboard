@@ -37,10 +37,22 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="choose a store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOr-FS-Nwa">
                                 <rect key="frame" x="82" y="110" width="211" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSk-oz-0H5">
+                                <rect key="frame" x="28" y="171" width="58" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpB-LL-gZk">
+                                <rect key="frame" x="55" y="205" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fake Store"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.3992098559897479" blue="0.36433896502985585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="70x-gG-MgV"/>
@@ -53,19 +65,13 @@
             </objects>
             <point key="canvasLocation" x="1205.5999999999999" y="-1112.807881773399"/>
         </scene>
-        <!--View Controller-->
+        <!--Container View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ContainerView" customModule="Dashline" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cN3-eq-Lqh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -107,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="1205.5999999999999" y="355.41871921182269"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View-->
         <scene sceneID="U2V-O4-gzp">
             <objects>
-                <viewController storyboardIdentifier="home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pxe-9t-eB1" sceneMemberID="viewController">
+                <viewController id="Pxe-9t-eB1" customClass="HomeView" customModule="Dashline" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5fS-IE-Yd7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +151,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reciepts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yO-Jq-Ax7">
-                                        <rect key="frame" x="158" y="151" width="59" height="21"/>
+                                        <rect key="frame" x="158.33333333333334" y="151" width="59" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -163,7 +169,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="GreyOval"/>
                                         <connections>
-                                            <segue destination="AE2-qF-7JX" kind="show" id="osr-is-B1p"/>
+                                            <action selector="showCheckout:" destination="Pxe-9t-eB1" eventType="touchUpInside" id="dr8-X0-8Bs"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ReceiptIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ptv-cf-2I5">
@@ -205,8 +211,8 @@
                                 <color key="textColor" red="0.98431372549019602" green="0.40784313725490196" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yjf-RL-fJX">
-                                <rect key="frame" x="16" y="278" width="343" height="304"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjf-RL-fJX">
+                                <rect key="frame" x="16" y="278" width="344" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">
@@ -225,13 +231,13 @@ No Items 🍎</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u6f-z6-Md9">
-                                <rect key="frame" x="0.0" y="763" width="375" height="49"/>
+                                <rect key="frame" x="0.0" y="763" width="375" height="83"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items/>
                             </tabBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WW-3y-w7L">
-                                <rect key="frame" x="134" y="636" width="106" height="29"/>
+                                <rect key="frame" x="134" y="636" width="107" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="CheckoutButton"/>
                             </button>
@@ -243,24 +249,32 @@ No Items 🍎</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWs-dE-xg5">
-                                <rect key="frame" x="157" y="733" width="60" height="60"/>
+                                <rect key="frame" x="157" y="733" width="61" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="ScanButton"/>
+                                <connections>
+                                    <action selector="showScanner:" destination="Pxe-9t-eB1" eventType="touchUpInside" id="OOC-ge-LOj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NLR-b7-tNw"/>
                     </view>
                     <navigationItem key="navigationItem" id="lmC-0f-anM"/>
+                    <connections>
+                        <outlet property="itemsList" destination="yjf-RL-fJX" id="eYz-A2-6eY"/>
+                        <outlet property="scanButton" destination="GWs-dE-xg5" id="d1h-TR-ybF"/>
+                        <segue destination="AE2-qF-7JX" kind="show" identifier="showCheckout" id="kmC-Ad-Eor"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p12-vJ-gtc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1205.5999999999999" y="-393.8423645320197"/>
         </scene>
-        <!--View Controller-->
+        <!--Checkout View-->
         <scene sceneID="55M-ad-snH">
             <objects>
-                <viewController id="AE2-qF-7JX" sceneMemberID="viewController">
+                <viewController id="AE2-qF-7JX" customClass="CheckoutView" customModule="Dashline" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fh4-jG-vP0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,7 +283,7 @@ No Items 🍎</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="611"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="2          Liquid Laundry Detergent           $9.00" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Klg-ej-x8a">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="2          Liquid Laundry Detergent           $9.00" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Klg-ej-x8a">
                                         <rect key="frame" x="8" y="138" width="359" height="377"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -331,7 +345,7 @@ No Items 🍎</string>
         <!--Navigation Controller-->
         <scene sceneID="LOZ-tb-7rR">
             <objects>
-                <navigationController id="WmK-vY-2v1" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WmK-vY-2v1" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hoa-Fb-GWt">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

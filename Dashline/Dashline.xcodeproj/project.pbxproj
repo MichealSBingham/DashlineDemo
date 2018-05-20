@@ -16,6 +16,10 @@
 		2E15BC2920AF3B6E00BEA0CB /* DashlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15BC2820AF3B6E00BEA0CB /* DashlineTests.swift */; };
 		2E15BC3420AF3B6E00BEA0CB /* DashlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15BC3320AF3B6E00BEA0CB /* DashlineUITests.swift */; };
 		75DCB7A320B115BA001D0B1A /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCB7A220B115BA001D0B1A /* ContainerView.swift */; };
+		75DCB7A420B1EFB5001D0B1A /* Myriad Pro Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75DCB7A020B0A4F0001D0B1A /* Myriad Pro Regular.ttf */; };
+		75DCB7A520B1EFBB001D0B1A /* Arial Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75DCB7A120B0A862001D0B1A /* Arial Black.ttf */; };
+		75DCB7A920B1F14B001D0B1A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCB7A820B1F14B001D0B1A /* HomeView.swift */; };
+		75DCB7AB20B215B3001D0B1A /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCB7AA20B215B3001D0B1A /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,8 @@
 		75DCB7A020B0A4F0001D0B1A /* Myriad Pro Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Myriad Pro Regular.ttf"; sourceTree = "<group>"; };
 		75DCB7A120B0A862001D0B1A /* Arial Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arial Black.ttf"; sourceTree = "<group>"; };
 		75DCB7A220B115BA001D0B1A /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		75DCB7A820B1F14B001D0B1A /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		75DCB7AA20B215B3001D0B1A /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +112,9 @@
 				2E15BC1020AF3B6E00BEA0CB /* AppDelegate.swift */,
 				2E15BC1220AF3B6E00BEA0CB /* chooseStore.swift */,
 				75DCB7A220B115BA001D0B1A /* ContainerView.swift */,
+				75DCB7A820B1F14B001D0B1A /* HomeView.swift */,
 				2E15BC1420AF3B6E00BEA0CB /* Main.storyboard */,
+				75DCB7AA20B215B3001D0B1A /* CheckoutView.swift */,
 				2E15BC1A20AF3B6E00BEA0CB /* Assets.xcassets */,
 				2E15BC1C20AF3B6E00BEA0CB /* LaunchScreen.storyboard */,
 				2E15BC1F20AF3B6E00BEA0CB /* Info.plist */,
@@ -242,6 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DCB7A520B1EFBB001D0B1A /* Arial Black.ttf in Resources */,
+				75DCB7A420B1EFB5001D0B1A /* Myriad Pro Regular.ttf in Resources */,
 				2E15BC1E20AF3B6E00BEA0CB /* LaunchScreen.storyboard in Resources */,
 				2E15BC1B20AF3B6E00BEA0CB /* Assets.xcassets in Resources */,
 				2E15BC1620AF3B6E00BEA0CB /* Main.storyboard in Resources */,
@@ -271,7 +281,9 @@
 			files = (
 				75DCB7A320B115BA001D0B1A /* ContainerView.swift in Sources */,
 				2E15BC1920AF3B6E00BEA0CB /* Dashline.xcdatamodeld in Sources */,
+				75DCB7AB20B215B3001D0B1A /* CheckoutView.swift in Sources */,
 				2E15BC1320AF3B6E00BEA0CB /* chooseStore.swift in Sources */,
+				75DCB7A920B1F14B001D0B1A /* HomeView.swift in Sources */,
 				2E15BC1120AF3B6E00BEA0CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
