@@ -17,7 +17,8 @@
 		2E15BC1E20AF3B6E00BEA0CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E15BC1C20AF3B6E00BEA0CB /* LaunchScreen.storyboard */; };
 		2E15BC2920AF3B6E00BEA0CB /* DashlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15BC2820AF3B6E00BEA0CB /* DashlineTests.swift */; };
 		2E15BC3420AF3B6E00BEA0CB /* DashlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15BC3320AF3B6E00BEA0CB /* DashlineUITests.swift */; };
-		5A732C347E405A9E25467421 /* Pods_Dashline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820823A7B8FA0F5DC69064E3 /* Pods_Dashline.framework */; };
+		3BCC31E27105E2191B95B3B7 /* Pods_DashlineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8711F808846899A41A29C26 /* Pods_DashlineUITests.framework */; };
+		DD8E8F9B1100E0889E273326 /* Pods_Dashline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2982CF76D4F6729E5AE340B7 /* Pods_Dashline.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2F5716DD9DE773376B7624 /* Pods_Dashline.framework in Frameworks */,
+				DD8E8F9B1100E0889E273326 /* Pods_Dashline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06A117C05156E78DD21E7EDD /* BuildFile in Frameworks */,
-				EF84BB0FFCEFEE44EE4C0CFE /* Pods_DashlineUITests.framework in Frameworks */,
+				3BCC31E27105E2191B95B3B7 /* Pods_DashlineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,8 +296,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75DCB7A520B1EFBB001D0B1A /* Arial Black.ttf in Resources */,
-				75DCB7A420B1EFB5001D0B1A /* Myriad Pro Regular.ttf in Resources */,
 				2E15BC1E20AF3B6E00BEA0CB /* LaunchScreen.storyboard in Resources */,
 				2E15BC1B20AF3B6E00BEA0CB /* Assets.xcassets in Resources */,
 				2E15BC1620AF3B6E00BEA0CB /* Main.storyboard in Resources */,
@@ -478,7 +477,6 @@
 			files = (
 				2E15BC1920AF3B6E00BEA0CB /* Dashline.xcdatamodeld in Sources */,
 				2E15BC1320AF3B6E00BEA0CB /* chooseStore.swift in Sources */,
-				75DCB7A920B1F14B001D0B1A /* HomeView.swift in Sources */,
 				2E15BC1120AF3B6E00BEA0CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
