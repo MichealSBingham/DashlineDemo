@@ -20,6 +20,11 @@
 		2E6E017C20B23A6B00D966A6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E017B20B23A6B00D966A6 /* Product.swift */; };
 		2E6E017E20B23A7900D966A6 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E017D20B23A7900D966A6 /* ShoppingCart.swift */; };
 		3BCC31E27105E2191B95B3B7 /* Pods_DashlineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8711F808846899A41A29C26 /* Pods_DashlineUITests.framework */; };
+		75DCB7AC20B23F69001D0B1A /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCB7A220B115BA001D0B1A /* ContainerView.swift */; };
+		75DCB7AD20B23F93001D0B1A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCB7A820B1F14B001D0B1A /* HomeView.swift */; };
+		75DCB7AE20B23F99001D0B1A /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCB7AA20B215B3001D0B1A /* CheckoutView.swift */; };
+		75DCB7AF20B2401D001D0B1A /* Arial Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75DCB7A120B0A862001D0B1A /* Arial Black.ttf */; };
+		75DCB7B020B24020001D0B1A /* Myriad Pro Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75DCB7A020B0A4F0001D0B1A /* Myriad Pro Regular.ttf */; };
 		DD8E8F9B1100E0889E273326 /* Pods_Dashline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2982CF76D4F6729E5AE340B7 /* Pods_Dashline.framework */; };
 /* End PBXBuildFile section */
 
@@ -302,6 +307,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DCB7B020B24020001D0B1A /* Myriad Pro Regular.ttf in Resources */,
+				75DCB7AF20B2401D001D0B1A /* Arial Black.ttf in Resources */,
 				2E15BC1E20AF3B6E00BEA0CB /* LaunchScreen.storyboard in Resources */,
 				2E15BC1B20AF3B6E00BEA0CB /* Assets.xcassets in Resources */,
 				2E15BC1620AF3B6E00BEA0CB /* Main.storyboard in Resources */,
@@ -481,6 +488,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DCB7AE20B23F99001D0B1A /* CheckoutView.swift in Sources */,
+				75DCB7AD20B23F93001D0B1A /* HomeView.swift in Sources */,
+				75DCB7AC20B23F69001D0B1A /* ContainerView.swift in Sources */,
 				2E6E017E20B23A7900D966A6 /* ShoppingCart.swift in Sources */,
 				2E15BC1920AF3B6E00BEA0CB /* Dashline.xcdatamodeld in Sources */,
 				2E6E017C20B23A6B00D966A6 /* Product.swift in Sources */,
