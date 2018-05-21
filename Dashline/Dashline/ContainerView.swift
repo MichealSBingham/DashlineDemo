@@ -10,10 +10,13 @@ import Foundation
 import UIKit
 
 
-class ContainerView: UIViewController {
+class ContainerView: UIViewController, UIScrollViewDelegate {
 
     var scannerFrame: CGRect!
     var scrollView: UIScrollView!
+    var lastContentOffset: CGFloat!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,6 +53,7 @@ class ContainerView: UIViewController {
         scrollView.showsVerticalScrollIndicator = false
         scrollView.isScrollEnabled = true
         scrollView.setContentOffset(CGPoint(x: frame1.origin.x, y: frame1.origin.y+50), animated: false)
+        scrollView.delegate = self
         view.addSubview(scrollView)
     
     
@@ -62,9 +66,39 @@ class ContainerView: UIViewController {
         scrollView.setContentOffset(CGPoint(x: scannerFrame.origin.x, y: scannerFrame.origin.y), animated: true)
         
     }
+    
+    
+   
+    
+ 
+    
+    
+     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        if (scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)) {
+            // We're at the bottom of Scroll View : (Scanner Screen)
+            NotificationCenter.default.post(name: .didShowScanner, object: nil)
+        }
+        
+        if (scrollView.contentOffset.y <= 0){
+            // We're at the top of Scanner View, stop scanner
+             NotificationCenter.default.post(name: .didLeaveScanner, object: nil)
+         
+        }
+        
+        if (scrollView.contentOffset.y > 0 && scrollView.contentOffset.y < (scrollView.contentSize.height - scrollView.frame.size.height)){
+            //not top and not bottom, stop scanner
+            NotificationCenter.default.post(name: .didLeaveScanner, object: nil)
+            
+        }
+    }
+
+
 
 }
 
 extension Notification.Name{
     static let showScanner = Notification.Name("showScanner")
+    static let didShowScanner = Notification.Name("didShowScanner")
+    static let didLeaveScanner = Notification.Name("didLeaveScanner")
 }

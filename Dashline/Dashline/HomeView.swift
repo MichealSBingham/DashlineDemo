@@ -20,6 +20,7 @@ class HomeView: UIViewController{
     }
     @IBAction func showScanner(_ sender: Any) {
         NotificationCenter.default.post(Notification(name: .showScanner))
+         NotificationCenter.default.post(Notification(name: .didShowScanner))
     }
     @IBAction func showCheckout(_ sender: Any) {
         performSegue(withIdentifier: "showCheckout", sender: nil)
