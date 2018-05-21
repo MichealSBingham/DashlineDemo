@@ -16,18 +16,19 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     var captureSession:AVCaptureSession?
     var shouldScanForBarcodes = false
     
+    @IBOutlet var confirmPriceView: UIView!
+    @IBOutlet var blurView: UIVisualEffectView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         setupScanner()
         
-        
-        
-       
-        
-       
-        
+        self.view.bringSubview(toFront: blurView)
+        self.view.addSubview(confirmPriceView)
+        blurView.isHidden = true
+        blurView.alpha = 0.7
+        confirmPriceView.alpha = 0
+        confirmPriceView.center = CGPoint(x: self.view.center.x, y: self.view.center.y+200)
     }
     
     override func didReceiveMemoryWarning() {
@@ -62,12 +63,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
         print("The barcode is :  ... \(upc)\n")
         
+        animateInPopup()
        
         // **** UPC / Barcode was Detected. Stop Actively Scanning for a new barcode here and show popup.
-        
-       
-   
-        
         
     }
     
@@ -131,4 +129,29 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         
         shouldScanForBarcodes = false
     }
+    
+    @IBAction func didTapCancelItem(_ sender: Any) {
+        animateOutPopup()
+    }
+    @IBAction func didConfirmItem(_ sender: Any) {
+    }
+    
+    func animateInPopup(){
+
+        blurView.isHidden = false
+        UIView.animate(withDuration: 0.25, animations: {
+            self.confirmPriceView.alpha = 1
+            self.confirmPriceView.transform = CGAffineTransform.init(translationX: 0, y: -200)
+        })
+    }
+    
+    func animateOutPopup(){
+        blurView.isHidden = true
+        UIView.animate(withDuration: 0.25, animations: {
+            self.confirmPriceView.alpha = 0
+            self.confirmPriceView.transform = CGAffineTransform.init(translationX: 0, y: 200)
+        })
+    }
+
 }
+
