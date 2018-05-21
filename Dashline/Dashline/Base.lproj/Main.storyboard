@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Arial Black.ttf">
             <string>Arial-Black</string>
+        </array>
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Heavy</string>
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Regular</string>
         </array>
         <array key="Myriad Pro Regular.ttf">
             <string>MyriadPro-Regular</string>
@@ -134,6 +139,10 @@
                     <connections>
                         <outlet property="blurView" destination="Tv8-Tc-Sk9" id="xX8-OU-8td"/>
                         <outlet property="confirmPriceView" destination="Y6c-Wn-CCx" id="9Lg-Cg-Zmp"/>
+                        <outlet property="pricePerItemLabel" destination="CyE-3m-ASB" id="OSK-hi-ahE"/>
+                        <outlet property="productNameLabel" destination="Ypk-5X-bz7" id="1BG-qC-UW4"/>
+                        <outlet property="quantityLabel" destination="bR0-OM-h9o" id="gSo-IN-ZgE"/>
+                        <outlet property="totalPriceLabel" destination="EmJ-b0-Nd4" id="VBB-Td-Hkq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dn9-dx-2eq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -146,7 +155,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="confirmButton"/>
                             <connections>
-                                <action selector="didConfirmItem:" destination="F09-5D-4J4" eventType="touchUpInside" id="BWs-wF-Vl3"/>
+                                <action selector="didConfirmItem:" destination="F09-5D-4J4" eventType="touchUpInside" id="QW8-sC-X44"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="confirm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hER-75-g9L">
@@ -192,18 +201,24 @@
                             <rect key="frame" x="207" y="174" width="44" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="AddButton"/>
+                            <connections>
+                                <action selector="didTapIncrementItem:" destination="F09-5D-4J4" eventType="touchUpInside" id="Kv7-23-8Gy"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Se-6C-kMM">
                             <rect key="frame" x="113" y="174" width="44" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" image="MinusButton"/>
+                            <connections>
+                                <action selector="didTapDecrementItem:" destination="F09-5D-4J4" eventType="touchUpInside" id="WFG-sR-Ezm"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wP-h5-czg">
                             <rect key="frame" x="56" y="268" width="115" height="41"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button" image="CancelButton"/>
                             <connections>
-                                <action selector="didTapCancelItem:" destination="F09-5D-4J4" eventType="touchUpInside" id="2Vm-ZH-9m6"/>
+                                <action selector="didTapCancelItem:" destination="F09-5D-4J4" eventType="touchUpInside" id="eph-jh-4ng"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cancel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sdr-BC-mH4">

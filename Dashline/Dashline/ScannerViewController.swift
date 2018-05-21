@@ -18,6 +18,18 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     @IBOutlet var confirmPriceView: UIView!
     @IBOutlet var blurView: UIVisualEffectView!
+    
+    @IBOutlet weak var productNameLabel: UILabel!
+    
+    @IBOutlet weak var pricePerItemLabel: UILabel!
+    
+    @IBOutlet weak var totalPriceLabel: UILabel!
+    
+    @IBOutlet weak var quantityLabel: UILabel!
+    
+    var item: Product? = nil
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -63,10 +75,17 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
         print("The barcode is :  ... \(upc)\n")
         
-        animateInPopup()
+        
        
         // **** UPC / Barcode was Detected. Stop Actively Scanning for a new barcode here and show popup.
-        
+        Product.get(withID: "\(generateRandomNumber(min: 1, max: 4))") { (product) in
+            
+            if let product = product {
+                item = product
+                animateInPopup(product: product)
+                
+            }
+        }
     }
     
   
@@ -133,10 +152,41 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     @IBAction func didTapCancelItem(_ sender: Any) {
         animateOutPopup()
     }
+    
     @IBAction func didConfirmItem(_ sender: Any) {
+        
+        shouldScanForBarcodes = true
+        try! uiRealm.beginWrite()
+        item!.quantity = Int(quantityLabel.text!)!
+        try! uiRealm.commitWrite()
+         item!.addToCart()
+        animateOutPopup()
+        
+        //Add To Table
     }
     
-    func animateInPopup(){
+    
+    @IBAction func didTapIncrementItem(_ sender: Any) {
+        quantityLabel.text = String(Int(quantityLabel.text!)! + 1)
+        
+    }
+    
+    
+    @IBAction func didTapDecrementItem(_ sender: Any) {
+        
+        quantityLabel.text = String(Int(quantityLabel.text!)! - 1)
+    }
+    
+    
+    
+    
+    func animateInPopup(product: Product){
+        shouldScanForBarcodes = false
+        product.calculateTotal()
+        productNameLabel.text = product.name
+        pricePerItemLabel.text = "$\(product.price) each"
+        quantityLabel.text = "\(product.quantity+1)"
+        totalPriceLabel.text = "$\(product.price*Double((product.quantity+1)))"
 
         blurView.isHidden = false
         UIView.animate(withDuration: 0.25, animations: {
@@ -146,6 +196,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
     
     func animateOutPopup(){
+        shouldScanForBarcodes = true
         blurView.isHidden = true
         UIView.animate(withDuration: 0.25, animations: {
             self.confirmPriceView.alpha = 0
@@ -153,5 +204,12 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         })
     }
 
+    
+    
+    
 }
 
+func generateRandomNumber(min: Int, max: Int) -> Int {
+    let randomNum = Int(arc4random_uniform(UInt32(max) - UInt32(min)) + UInt32(min))
+    return randomNum
+}
