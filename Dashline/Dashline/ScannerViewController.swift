@@ -35,7 +35,6 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         // Do any additional setup after loading the view, typically from a nib.
         setupScanner()
         
-        self.view.bringSubview(toFront: blurView)
         self.view.addSubview(confirmPriceView)
         blurView.isHidden = true
         blurView.alpha = 0.7
@@ -128,6 +127,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                 videoPreviewLayer?.videoGravity = .resizeAspectFill
                 videoPreviewLayer?.frame = view.layer.bounds
                 view.layer.addSublayer(videoPreviewLayer!)
+                videoPreviewLayer?.zPosition = -1
                 
             } catch {
                 // Error with Device Input
