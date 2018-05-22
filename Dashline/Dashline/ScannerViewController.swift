@@ -168,6 +168,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     @IBAction func didTapIncrementItem(_ sender: Any) {
         quantityLabel.text = String(Int(quantityLabel.text!)! + 1)
+        var price = Double(quantityLabel.text!)! * item!.price
+        totalPriceLabel.text = "$\(price)"
         
     }
     
@@ -175,6 +177,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     @IBAction func didTapDecrementItem(_ sender: Any) {
         
         quantityLabel.text = String(Int(quantityLabel.text!)! - 1)
+        
+        var price = Double(quantityLabel.text!)! * item!.price
+        totalPriceLabel.text = "$\(price)"
     }
     
     

@@ -81,7 +81,48 @@ class Product: Object{
     
     
     
+   class func generateRandomProducts()  {
+   
+        try! uiRealm.write {
+            uiRealm.deleteAll()
+        }
+        
+        try! uiRealm.beginWrite()
+        
+        let apple = Product()
+        apple.name = "Apple"
+        apple.id  = "1"
+        apple.price = 1.23
+        apple.tax_rate = 0
+        
+        let bread = Product()
+        bread.name = "Bread"
+        bread.id  = "2"
+        bread.price = 1.99
+        bread.tax_rate = 0
+        
+        let milk = Product()
+        milk.name = "Milk"
+        milk.id  = "3"
+        milk.price = 2.82
+        milk.tax_rate = 0
+        
+        let candybar = Product()
+        candybar.name = "Candy Bar"
+        candybar.id  = "4"
+        candybar.price = 0.99
+        candybar.tax_rate = 0
+        
+        try! uiRealm.commitWrite()
+        
+        apple.addToCart()
+        bread.addToCart()
+        milk.addToCart()
+        candybar.addToCart()
+        
     
+        
+    }
     
     
     // Call this whenever the quantity of a product is changed. Posts a notification that the quantity of a product has changed and passes the product as data in the notification under userInfo["product"].
