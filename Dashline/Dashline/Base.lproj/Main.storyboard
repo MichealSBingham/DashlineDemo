@@ -134,6 +134,7 @@
                     <connections>
                         <outlet property="blurView" destination="Tv8-Tc-Sk9" id="xX8-OU-8td"/>
                         <outlet property="confirmPriceView" destination="Y6c-Wn-CCx" id="9Lg-Cg-Zmp"/>
+                        <outlet property="finalPriceLabel" destination="tpA-Ok-4Cl" id="8ns-6b-uZZ"/>
                         <outlet property="pricePerItemLabel" destination="CyE-3m-ASB" id="OSK-hi-ahE"/>
                         <outlet property="productNameLabel" destination="Ypk-5X-bz7" id="1BG-qC-UW4"/>
                         <outlet property="quantityLabel" destination="bR0-OM-h9o" id="gSo-IN-ZgE"/>
@@ -400,8 +401,8 @@ No Items 🍎</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="611"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="2          Liquid Laundry Detergent           $9.00" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Klg-ej-x8a">
-                                        <rect key="frame" x="8" y="138" width="359" height="377"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="2          Liquid Laundry Detergent           $9.00" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Klg-ej-x8a">
+                                        <rect key="frame" x="8" y="103" width="359" height="377"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.32549019607843138" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -418,15 +419,15 @@ No Items 🍎</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tax: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQd-wa-7SZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tax: $0.95" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQd-wa-7SZ">
                                 <rect key="frame" x="237" y="629" width="113" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Savings: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eW-fm-LuT">
-                                <rect key="frame" x="237" y="658" width="113" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Savings: $0.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eW-fm-LuT">
+                                <rect key="frame" x="237" y="658" width="122" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -450,6 +451,10 @@ No Items 🍎</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CreditCardBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-KC-p3T">
+                                <rect key="frame" x="28" y="658" width="92" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Rhn-Ll-bGz"/>
@@ -481,6 +486,7 @@ No Items 🍎</string>
         <image name="CancelButton" width="978" height="312"/>
         <image name="CartIcon" width="105" height="92"/>
         <image name="CheckoutButton" width="2934" height="936"/>
+        <image name="CreditCardBackground" width="216" height="133"/>
         <image name="GreyOval" width="453" height="453"/>
         <image name="HexPatternGrey" width="1081" height="471"/>
         <image name="HexPatternWhite" width="1083" height="627"/>

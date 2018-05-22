@@ -25,6 +25,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     @IBOutlet weak var totalPriceLabel: UILabel!
     
+    @IBOutlet var finalPriceLabel: UILabel!
+    
     @IBOutlet weak var quantityLabel: UILabel!
     
     var item: Product? = nil

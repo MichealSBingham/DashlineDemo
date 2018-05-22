@@ -13,8 +13,7 @@ import UIKit
 
 class HomeView: UIViewController{
     @IBOutlet var scanButton: UIButton!
-    @IBOutlet var itemsList: UITextView!
-    
+
    override func viewDidLoad() {
         navigationController?.navigationBar.isHidden = true
        Product.generateRandomProducts()
