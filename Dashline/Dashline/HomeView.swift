@@ -17,6 +17,7 @@ class HomeView: UIViewController{
     
    override func viewDidLoad() {
         navigationController?.navigationBar.isHidden = true
+       Product.generateRandomProducts()
     }
     @IBAction func showScanner(_ sender: Any) {
         NotificationCenter.default.post(Notification(name: .showScanner))
