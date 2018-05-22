@@ -27,6 +27,7 @@ class ShoppingCart{
         var total = 0.0
         let allProducts = uiRealm.objects(Product.self)
         for product in allProducts{
+            product.calculateTotal()
             total += product.total
         }
         
