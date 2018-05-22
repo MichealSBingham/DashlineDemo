@@ -313,8 +313,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Here is your shopping list." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfw-nX-nd5">
-                                <rect key="frame" x="16" y="248" width="191" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Savi Provisions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfw-nX-nd5">
+                                <rect key="frame" x="16" y="248" width="167" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -361,7 +361,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Linda" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFY-6H-e4y">
-                                <rect key="frame" x="59" y="206" width="286" height="43"/>
+                                <rect key="frame" x="59" y="206" width="124" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Arial-Black" family="Arial Black" pointSize="30"/>
                                 <color key="textColor" red="0.98431372549019602" green="0.40784313725490196" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -418,6 +418,10 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Savi Provisions Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="wQq-X5-FPp">
+                                <rect key="frame" x="191" y="200" width="184" height="103"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NLR-b7-tNw"/>
@@ -540,6 +544,7 @@
         <image name="PayIcon" width="111" height="111"/>
         <image name="PriceBackground" width="2844" height="864"/>
         <image name="ReceiptIcon" width="99" height="111"/>
+        <image name="Savi Provisions Logo.png" width="1050" height="198"/>
         <image name="ScanButton" width="422" height="423"/>
         <image name="ScannerPopupBackground" width="1518" height="1130"/>
         <image name="confirmButton" width="326" height="104"/>
