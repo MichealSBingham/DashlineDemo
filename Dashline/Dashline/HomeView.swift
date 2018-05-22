@@ -15,12 +15,22 @@ class HomeView: UIViewController, UITableViewDataSource{
     @IBOutlet var scanButton: UIButton!
 
     @IBOutlet weak var cartTableView: UITableView!
+    var showDiscounts: Bool = true
     
     private var products: [Product] = []
+    private var discounts: [String] = ["You have $20.10 in cash back 💸", "Milk is buy 1 get 1 free", "All fruits are on a 20% discount", "Buy soap, get 1 50% off", "All meats have a 30% markdown today", "Spend $100 get cashback bonus!"]
     
+    @IBOutlet weak var showPromotionsLabel: UILabel!
     
     override func viewDidLoad() {
         navigationController?.navigationBar.isHidden = true
+        
+        if showDiscounts{
+            showPromotionsLabel.text = "Show Shopping Cart"
+        } else{
+            showPromotionsLabel.text = "Show Promotions"
+        }
+        
         cartTableView.dataSource = self
         cartTableView.separatorStyle = .none
         cartTableView.allowsSelection = false
@@ -69,6 +79,16 @@ class HomeView: UIViewController, UITableViewDataSource{
     
     
     
+    @IBAction func didTapTogglePromotions(_ sender: Any) {
+        
+        showDiscounts = !showDiscounts
+        showPromotionsLabel.text = showDiscounts ? "Show Shopping Cart" : "Show Promotions"
+        
+        cartTableView.reloadData()
+    }
+    
+    
+    
     // Table View Functions
     
     
@@ -78,10 +98,21 @@ class HomeView: UIViewController, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
+        if showDiscounts {
+            return discounts.count
+        }
         return products.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if showDiscounts{
+            
+             let cell = cartTableView.dequeueReusableCell(withIdentifier: "discountCell")
+            cell?.textLabel?.text = discounts[indexPath.row]
+            
+            return cell!
+        }
         
         let cell = cartTableView.dequeueReusableCell(withIdentifier: "productCellID") as! ProductTableViewCell
         let product = products[indexPath.row]

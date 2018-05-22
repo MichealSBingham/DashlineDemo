@@ -341,11 +341,14 @@
                                 <rect key="frame" x="134" y="636" width="107" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="CheckoutButton"/>
+                                <connections>
+                                    <action selector="didTapTogglePromotions:" destination="Pxe-9t-eB1" eventType="touchUpInside" id="Jiv-iC-rWH"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="show more.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcV-ft-CBF">
-                                <rect key="frame" x="153" y="642" width="74" height="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show Shopping Cart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcV-ft-CBF">
+                                <rect key="frame" x="134" y="642" width="107" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -405,6 +408,14 @@
                                             <outlet property="productCellQuantity" destination="0bS-jW-I0V" id="jbO-5N-2ux"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="discountCell" id="RF7-c5-vPM">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RF7-c5-vPM" id="J69-Fn-cDH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -415,6 +426,7 @@
                     <connections>
                         <outlet property="cartTableView" destination="M7N-1w-5Pb" id="Js0-Hm-BbK"/>
                         <outlet property="scanButton" destination="GWs-dE-xg5" id="d1h-TR-ybF"/>
+                        <outlet property="showPromotionsLabel" destination="CcV-ft-CBF" id="kRK-8N-Me7"/>
                         <segue destination="AE2-qF-7JX" kind="show" identifier="showCheckout" id="kmC-Ad-Eor"/>
                     </connections>
                 </viewController>
