@@ -22,6 +22,11 @@
 		2E6E018C20B3AF0B00D966A6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E018B20B3AF0B00D966A6 /* Product.swift */; };
 		2E6E018E20B46D6400D966A6 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E018D20B46D6400D966A6 /* ProductTableViewCell.swift */; };
 		2E6E019020B4849B00D966A6 /* Savi Provisions Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6E018F20B4849A00D966A6 /* Savi Provisions Logo.png */; };
+		2E6E019220B4AAC600D966A6 /* Westview Corner Store.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6E019120B4AAC400D966A6 /* Westview Corner Store.png */; };
+		2E6E019420B4ABF200D966A6 /* Logo-mercado-fresco.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6E019320B4ABF100D966A6 /* Logo-mercado-fresco.png */; };
+		2E6E019620B4AC7700D966A6 /* sev-logo_orig.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6E019520B4AC7600D966A6 /* sev-logo_orig.png */; };
+		2E6E019820B4AD9000D966A6 /* carverlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6E019720B4AD8E00D966A6 /* carverlogo.png */; };
+		2E6E019A20B4AF4500D966A6 /* mercantile.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6E019920B4AF4300D966A6 /* mercantile.png */; };
 		3BCC31E27105E2191B95B3B7 /* Pods_DashlineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8711F808846899A41A29C26 /* Pods_DashlineUITests.framework */; };
 		75DCB7AC20B23F69001D0B1A /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCB7A220B115BA001D0B1A /* ContainerView.swift */; };
 		75DCB7AD20B23F93001D0B1A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCB7A820B1F14B001D0B1A /* HomeView.swift */; };
@@ -72,6 +77,11 @@
 		2E6E018B20B3AF0B00D966A6 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		2E6E018D20B46D6400D966A6 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		2E6E018F20B4849A00D966A6 /* Savi Provisions Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Savi Provisions Logo.png"; sourceTree = "<group>"; };
+		2E6E019120B4AAC400D966A6 /* Westview Corner Store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Westview Corner Store.png"; sourceTree = "<group>"; };
+		2E6E019320B4ABF100D966A6 /* Logo-mercado-fresco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo-mercado-fresco.png"; sourceTree = "<group>"; };
+		2E6E019520B4AC7600D966A6 /* sev-logo_orig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sev-logo_orig.png"; sourceTree = "<group>"; };
+		2E6E019720B4AD8E00D966A6 /* carverlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carverlogo.png; sourceTree = "<group>"; };
+		2E6E019920B4AF4300D966A6 /* mercantile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mercantile.png; sourceTree = "<group>"; };
 		49C9A72868CF817B54590010 /* Pods_DashlineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashlineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED3AAF12E550A9542F5E5BE /* Pods-Dashline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashline.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dashline/Pods-Dashline.release.xcconfig"; sourceTree = "<group>"; };
 		70FF4B1F985EE22F0B79997C /* Pods-Dashline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dashline/Pods-Dashline.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +158,12 @@
 		2E15BC0F20AF3B6E00BEA0CB /* Dashline */ = {
 			isa = PBXGroup;
 			children = (
+				2E6E019520B4AC7600D966A6 /* sev-logo_orig.png */,
+				2E6E019920B4AF4300D966A6 /* mercantile.png */,
 				2E6E018F20B4849A00D966A6 /* Savi Provisions Logo.png */,
+				2E6E019320B4ABF100D966A6 /* Logo-mercado-fresco.png */,
+				2E6E019720B4AD8E00D966A6 /* carverlogo.png */,
+				2E6E019120B4AAC400D966A6 /* Westview Corner Store.png */,
 				2E15BC1020AF3B6E00BEA0CB /* AppDelegate.swift */,
 				2E15BC1220AF3B6E00BEA0CB /* chooseStore.swift */,
 				75DCB7A220B115BA001D0B1A /* ContainerView.swift */,
@@ -316,10 +331,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E6E019620B4AC7700D966A6 /* sev-logo_orig.png in Resources */,
 				75DCB7B020B24020001D0B1A /* Myriad Pro Regular.ttf in Resources */,
 				2E6E019020B4849B00D966A6 /* Savi Provisions Logo.png in Resources */,
+				2E6E019420B4ABF200D966A6 /* Logo-mercado-fresco.png in Resources */,
+				2E6E019220B4AAC600D966A6 /* Westview Corner Store.png in Resources */,
 				75DCB7AF20B2401D001D0B1A /* Arial Black.ttf in Resources */,
 				2E15BC1E20AF3B6E00BEA0CB /* LaunchScreen.storyboard in Resources */,
+				2E6E019820B4AD9000D966A6 /* carverlogo.png in Resources */,
+				2E6E019A20B4AF4500D966A6 /* mercantile.png in Resources */,
 				2E15BC1B20AF3B6E00BEA0CB /* Assets.xcassets in Resources */,
 				2E15BC1620AF3B6E00BEA0CB /* Main.storyboard in Resources */,
 			);

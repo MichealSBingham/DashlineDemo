@@ -35,29 +35,37 @@
                                 <rect key="frame" x="0.0" y="610" width="375" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRR-k0-cP3">
-                                <rect key="frame" x="135" y="269" width="111" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="choose a store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOr-FS-Nwa">
-                                <rect key="frame" x="82" y="110" width="211" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOr-FS-Nwa">
+                                <rect key="frame" x="81" y="82" width="213" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="28"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSk-oz-0H5">
-                                <rect key="frame" x="28" y="171" width="58" height="17"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Savi Provisions Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="0pM-vK-mtq">
+                                <rect key="frame" x="81" y="157" width="52" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpB-LL-gZk">
-                                <rect key="frame" x="55" y="205" width="272" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Westview Corner Store.png" translatesAutoresizingMaskIntoConstraints="NO" id="xmK-YW-u5p">
+                                <rect key="frame" x="97" y="229" width="181" height="153"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Fake Store"/>
-                            </button>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo-mercado-fresco.png" translatesAutoresizingMaskIntoConstraints="NO" id="jl6-eR-EBB">
+                                <rect key="frame" x="173" y="149" width="186" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sev-logo_orig.png" translatesAutoresizingMaskIntoConstraints="NO" id="LiB-vH-qYg">
+                                <rect key="frame" x="138" y="377" width="98" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="carverlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ijp-wh-WxE">
+                                <rect key="frame" x="213" y="520" width="106" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mercantile.png" translatesAutoresizingMaskIntoConstraints="NO" id="p1f-6U-dCh">
+                                <rect key="frame" x="38" y="503" width="139" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.3992098559897479" blue="0.36433896502985585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="70x-gG-MgV"/>
@@ -540,6 +548,7 @@
         <image name="HexPatternGrey" width="1081" height="471"/>
         <image name="HexPatternWhite" width="1083" height="627"/>
         <image name="Logo" width="105" height="105"/>
+        <image name="Logo-mercado-fresco.png" width="912" height="721"/>
         <image name="MinusButton" width="100" height="100"/>
         <image name="PayIcon" width="111" height="111"/>
         <image name="PriceBackground" width="2844" height="864"/>
@@ -547,6 +556,10 @@
         <image name="Savi Provisions Logo.png" width="1050" height="198"/>
         <image name="ScanButton" width="422" height="423"/>
         <image name="ScannerPopupBackground" width="1518" height="1130"/>
+        <image name="Westview Corner Store.png" width="480" height="480"/>
+        <image name="carverlogo.png" width="176" height="203"/>
         <image name="confirmButton" width="326" height="104"/>
+        <image name="mercantile.png" width="1500" height="1458"/>
+        <image name="sev-logo_orig.png" width="1547" height="374"/>
     </resources>
 </document>
