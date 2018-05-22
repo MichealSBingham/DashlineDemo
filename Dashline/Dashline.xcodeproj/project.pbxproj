@@ -20,6 +20,7 @@
 		2E6E017E20B23A7900D966A6 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E017D20B23A7900D966A6 /* ShoppingCart.swift */; };
 		2E6E018A20B2F83700D966A6 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E018920B2F83700D966A6 /* ScannerViewController.swift */; };
 		2E6E018C20B3AF0B00D966A6 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E018B20B3AF0B00D966A6 /* Product.swift */; };
+		2E6E018E20B46D6400D966A6 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6E018D20B46D6400D966A6 /* ProductTableViewCell.swift */; };
 		3BCC31E27105E2191B95B3B7 /* Pods_DashlineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8711F808846899A41A29C26 /* Pods_DashlineUITests.framework */; };
 		75DCB7AC20B23F69001D0B1A /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCB7A220B115BA001D0B1A /* ContainerView.swift */; };
 		75DCB7AD20B23F93001D0B1A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DCB7A820B1F14B001D0B1A /* HomeView.swift */; };
@@ -68,6 +69,7 @@
 		2E6E017D20B23A7900D966A6 /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 		2E6E018920B2F83700D966A6 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		2E6E018B20B3AF0B00D966A6 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2E6E018D20B46D6400D966A6 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		49C9A72868CF817B54590010 /* Pods_DashlineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashlineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED3AAF12E550A9542F5E5BE /* Pods-Dashline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashline.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dashline/Pods-Dashline.release.xcconfig"; sourceTree = "<group>"; };
 		70FF4B1F985EE22F0B79997C /* Pods-Dashline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dashline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dashline/Pods-Dashline.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				75DCB7A220B115BA001D0B1A /* ContainerView.swift */,
 				75DCB7A820B1F14B001D0B1A /* HomeView.swift */,
 				2E6E018B20B3AF0B00D966A6 /* Product.swift */,
+				2E6E018D20B46D6400D966A6 /* ProductTableViewCell.swift */,
 				2E15BC1420AF3B6E00BEA0CB /* Main.storyboard */,
 				2E6E018920B2F83700D966A6 /* ScannerViewController.swift */,
 				75DCB7AA20B215B3001D0B1A /* CheckoutView.swift */,
@@ -498,6 +501,7 @@
 				2E6E017E20B23A7900D966A6 /* ShoppingCart.swift in Sources */,
 				2E6E018A20B2F83700D966A6 /* ScannerViewController.swift in Sources */,
 				2E15BC1920AF3B6E00BEA0CB /* Dashline.xcdatamodeld in Sources */,
+				2E6E018E20B46D6400D966A6 /* ProductTableViewCell.swift in Sources */,
 				2E15BC1320AF3B6E00BEA0CB /* chooseStore.swift in Sources */,
 				2E15BC1120AF3B6E00BEA0CB /* AppDelegate.swift in Sources */,
 			);

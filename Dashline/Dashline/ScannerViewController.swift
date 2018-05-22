@@ -164,7 +164,11 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
          item!.addToCart()
         animateOutPopup()
         
+        let price = ShoppingCart.getCartTotal()
+        finalPriceLabel.text = "$\(price)"
+        
         //Add To Table
+        item!.notifyProductAdded()
     }
     
     
